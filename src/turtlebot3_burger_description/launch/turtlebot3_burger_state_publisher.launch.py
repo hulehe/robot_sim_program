@@ -32,12 +32,12 @@ def generate_launch_description():
     use_sim_time = LaunchConfiguration("use_sim_time")
     dec_use_sim_time = DeclareLaunchArgument(
         "use_sim_time",
-        default_value="false",
+        default_value="true",
         description="Use simulation (Gazebo) clock if true",
     )
 
     urdf = os.path.join(
-        get_package_share_directory("turtlebot3_description"),
+        get_package_share_directory("turtlebot3_burger_description"),
         "urdf",
         "turtlebot3_burger.urdf",
     )
